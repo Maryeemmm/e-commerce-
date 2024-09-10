@@ -1,0 +1,263 @@
+:root {
+    --ff-urbanist: 'Urbanist', sans-serif; 
+    --white: #fff; 
+    --gray-web: #6c757d;
+    --fw-500: 500;
+    --primary-font-size: clamp(1.5rem, 2.5vw, 3rem);
+    --navbar-spacing: 3vw;
+    --container-padding: 2rem; 
+    --image-height: 430px; /* Hauteur fixe pour les images */
+    --image-width: 365.333px; /* Largeur fixe pour les images */
+    --card-padding: 20px; /* Padding pour les images */
+}
+
+html {
+    font-family: var(--ff-urbanist);
+    font-size: 10px; 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: black;
+    font-size: 1.6rem;
+    font-weight: var(--fw-500);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.8rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: white;
+}
+
+.navbar-nom {
+    font-size: var(--primary-font-size);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    margin-right: var(--navbar-spacing);
+    font-size: 1.8rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+}
+
+.background-div {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('hero-banner-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.titre {
+    position: relative;
+    max-width: 50%;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 600;
+    line-height: clamp(2.5rem, 5vw, 5rem);
+    color: black;
+}
+
+.titre-description {
+    font-size: 1.2rem;
+    color: var(--gray-web);
+    margin-top: 1rem;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 0%; 
+    left: 5%;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    max-width: 1200px; 
+    margin: 50px;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.card {
+    position:relative; 
+    overflow: hidden; 
+    margin: 10px;
+    text-align:right; 
+    transition: transform 0.2s ease; 
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    height: var(--image-height);
+    width: var(--image-width);
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    color: black;
+    text-align: left; 
+}
+
+.card-title {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    margin: 0;
+    color: black;
+}
+
+.card-price {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: black;
+    margin-top: 10px;
+}
+
+.cta-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 250px;
+    border-radius: 10px;
+}
+
+
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    height:546.458;
+    margin: 0 20px 0 20px; 
+    display: flex;
+    flex-wrap: wrap; 
+    padding:0 15px 0 15px;
+    gap: 5px; 
+    justify-content: end;
+}
+
+
+.product-card {
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px; 
+    margin:10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+.product-card {
+    position:relative; 
+    overflow: hidden; 
+     margin:10px;
+    text-align:center; 
+    transition: transform 0.1s ease; 
+}
+.h1{
+    font-family: var(--ff-urbanist);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44 2px;
+}
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+
+.product-img {
+    height: 285.854px; 
+    width: 214.396; 
+    display:block;
+    overflow:clip;
+
+}
+
+
+.product-title {
+    font-size: 15px; 
+    margin-top: 0.5rem; 
+    font-size: Urbanist, sans-serif;
+    text-align: center;
+    line-height:24px;
+}
+
+
+.product-price {
+    font-size: 1.2rem;
+    color: var(--gray-web);
+    margin-top: 0.5rem;
+}
+
+
+.add-to-cart {
+    font-size: 1.2rem; 
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height:40px;
+    width:150px;
+    color:black;
+    text-transform: uppercase;
+    
+}
+
+
+.add-to-favorites {
+    font-size: 1.2rem; 
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    background-color: transparent;
+ 
+}

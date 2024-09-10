@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <nav class="navbar">
+                <div class="navbar-nom">Glowing</div>
+                <ul class="navbar-list">
+                    <li><a href="#Home" class="navbar-link">Home</a></li>
+                    <li><a href="#Collections" class="navbar-link">Collections</a></li>
+                    <li><a href="#Shop" class="navbar-link">Shop</a></li>
+                    <li><a href="#Offer" class="navbar-link">Offer</a></li>
+                </ul>
+            </nav>
+            <div class="alert">
+                <p class="alert-text">Free Shipping on ALL US orders $50+</p>
+            </div>
+        </div>
+    </header>
+
+    <div id="Home" class="background-div">
+        <div class="titre">
+            <h1>Reveal your beauty</h1>
+            <p class="titre-description">Clean, non-toxic ingredients, our products are designed for everyone.</p>
+            <p class="cta-text">Starting at $7.99</p>
+            <button class="card-button">Shop Now</button>
+        </div>
+    </div>
+    
+    <div id="Collections" class="container">
+        <div class="card-deck">
+            <div class="card">
+                <img src="collection-1.jpg" alt="Summer Collection Image" class="card-img-top">
+                <div class="card-overlay">
+                    <h2 class="card-title">Summer Collection</h2>
+                    <p class="card-price">Starting at $17.99</p>
+                    <button class="cta-button">Shop Now &rarr;</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="collection-2.jpg" alt="Summer Collection Image" class="card-img-top">
+                <div class="card-overlay">
+                    <h2 class="card-title">What's new?</h2>
+                    <p class="card-price">Get the GLOW!</p>
+                    <button class="cta-button">Shop Now &rarr;</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="collection-3.jpg" alt="Summer Collection Image" class="card-img-top">
+                <div class="card-overlay">
+                    <h2 class="card-title">Buy one get one!</h2>
+                    <p class="card-price">Starting at $7.99</p>
+                    <button class="cta-button">Shop Now &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="Shop">SHOP HERE !</h1>
+
+    <div class="container">
+        <div class="product-card" id="product1">
+            <img src="image copy 4.png" class="product-img">
+            <h2>Bio-shroom Serum</h2>
+            <p class="product-price">25 €</p>
+            <button class="add-to-cart" data-name="Bio-shroom Serum" data-price="25">Acheter</button>
+            <button class="add-to-favorites" data-name="Bio-shroom Serum"> ❤️</button>
+        </div>
+
+        <div class="product-card" id="product2">
+            <img src="image copy.png" class="product-img">
+            <h2>Glow Cleanser</h2>
+            <p class="product-price">25 €</p>
+            <button class="add-to-cart" data-name="Glow Cleanser" data-price="25">Acheter</button>
+            <button class="add-to-favorites" data-name="Glow Cleanser"> ❤️</button>
+        </div>
+
+        <div class="product-card" id="product3">
+            <img src="image copy 2.png" class="product-img">
+            <h2>Eye Cream</h2>
+            <p class="product-price">29 €</p>
+            <button class="add-to-cart" data-name="Eye Cream" data-price="29">Acheter</button>
+            <button class="add-to-favorites" data-name="Eye Cream"> ❤️</button>
+        </div>
+
+        <div class="product-card" id="product4">
+            <img src="image copy 3.png" class="product-img">
+            <h2>Glow Serum</h2>
+            <p class="product-price">20 €</p>
+            <button class="add-to-cart" data-name="Glow Serum" data-price="20">Acheter</button>
+            <button class="add-to-favorites" data-name="Glow Serum"> ❤️</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
